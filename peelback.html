@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>jQuery Peelback Demo</title>
+</head>
+<body>
+  <script src="/js/jquery-1.10.2.min.js"></script>
+  <script src="/js/jquery.peelback.js"></script>  
+  <script>
+    $(function() {
+      $('body').peelback({
+        adImage  : 'images/peel-ad.png',
+        peelImage  : 'images/peel-image.png',
+        clickURL : 'http://www.thebestdinosaur.com/',
+        smallSize: 50,
+        bigSize: 500,
+        gaTrack  : true,
+        gaLabel  : '#1 Stegosaurus',
+        autoAnimate: true
+      });
+    });
+  </script>
+</body>
+</html>
